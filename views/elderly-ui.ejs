@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Guardian - Senior Interface</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#FFFF00"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Family Guardian">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/icons/icon-192x192.png">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="elderly-interface">
+            <header class="main-header">
+                <h1>Family Guardian</h1>
+                <p class="subtitle">Your Safety, Our Priority</p>
+            </header>
+
+            <div class="emergency-section">
+                <button id="emergencyBtn" class="emergency-button">
+                    🚨 EMERGENCY HELP 🚨
+                </button>
+                <p class="emergency-text">Press this button if you need immediate help</p>
+            </div>
+
+            <div class="message-checker">
+                <h2>Check a Message</h2>
+                <textarea 
+                    id="messageInput" 
+                    placeholder="Paste a suspicious message or email here..." 
+                    rows="4"
+                ></textarea>
+                <button onclick="checkMessage()" class="check-button">
+                    Check for Scams
+                </button>
+                <div id="result" class="result-message"></div>
+            </div>
+
+            <div class="education-links">
+                <h2>Safety Lessons</h2>
+                <a href="/micro-lessons" class="lesson-link">📚 Learn About Scams</a>
+                <a href="/micro-lessons" class="lesson-link">🔒 Phone Safety</a>
+                <a href="/micro-lessons" class="lesson-link">💻 Internet Safety</a>
+            </div>
+
+            <div class="navigation">
+                <a href="/dashboard" class="nav-link">Family Dashboard →</a>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+/* High Contrast Accessibility Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px; /* Large base font size */
+    line-height: 1.6;
+    background-color: #000000; /* High contrast background */
+    color: #FFFFFF; /* High contrast text */
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Elderly Interface Styles */
+.elderly-interface {
+    text-align: center;
+}
+
+.main-header {
+    margin-bottom: 40px;
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    color: #FFFF00; /* High visibility yellow */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.subtitle {
+    font-size: 1.3em;
+    color: #00FFFF; /* High visibility cyan */
+}
+
+/* Emergency Button */
+.emergency-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: #FF0000; /* Bright red background */
+    border: 4px solid #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.emergency-button {
+    font-size: 2em;
+    padding: 30px 50px;
+    background: #FF0000;
+    color: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.emergency-button:hover {
+    background: #CC0000;
+    transform: scale(1.05);
+}
+
+.emergency-button:active {
+    transform: scale(0.95);
+}
+
+.emergency-text {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Message Checker */
+.message-checker {
+    margin: 40px 0;
+    padding: 30px;
+    background: #0000FF; /* Bright blue */
+    border: 3px solid #FFFFFF;
+    border-radius: 15px;
+}
+
+.message-checker h2 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#messageInput {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    background: #000000;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.check-button {
+    font-size: 1.3em;
+    padding: 15px 30px;
+    background: #00FF00; /* Bright green */
+    color: #000000;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.check-button:hover {
+    background: #00CC00;
+}
+
+.result-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.result-message.safe {
+    background: #00FF00;
+    color: #000000;
+    border: 2px solid #FFFFFF;
+}
+
+.result-message.warning {
+    background: #FFA500;
+    color: #000000;
+    border: 2px solid #FFFFFF;
+}
+
+.result-message.danger {
+    background: #FF0000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+/* Education Links */
+.education-links {
+    margin: 40px 0;
+}
+
+.education-links h2 {
+    color: #FFFF00;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.lesson-link {
+    display: block;
+    font-size: 1.3em;
+    padding: 20px;
+    margin: 10px 0;
+    background: #800080; /* Purple */
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.lesson-link:hover {
+    background: #600060;
+}
+
+/* Navigation */
+.navigation {
+    margin-top: 40px;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    color: #00FFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #00FFFF;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    background: #00FFFF;
+    color: #000000;
+}
+
+/* Dashboard Styles */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    font-size: 2.2em;
+    color: #00FF00;
+    margin-bottom: 10px;
+}
+
+.stats-overview {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #0000FF;
+    padding: 20px;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.stat-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.stat-card p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFFF00;
+}
+
+/* Alerts */
+.alerts-section {
+    margin-bottom: 40px;
+}
+
+.alerts-section h2 {
+    color: #FFFF00;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.refresh-button {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background: #00FF00;
+    color: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.alert-item {
+    background: #FFA500;
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.alert-item.emergency {
+    background: #FF0000;
+    color: #FFFFFF;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.alert-actions {
+    margin-top: 15px;
+}
+
+.approve-btn, .block-btn {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.approve-btn {
+    background: #00FF00;
+    color: #000000;
+}
+
+.block-btn {
+    background: #FF0000;
+    color: #FFFFFF;
+}
+
+/* Safe Contacts */
+.contacts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.contact-item {
+    background: #008000;
+    padding: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Lessons Page */
+.lesson-cards {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.lesson-card {
+    background: #0000FF;
+    padding: 30px;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+
+.lesson-card h2 {
+    color: #FFFF00;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.lesson-card ul {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.lesson-card li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .main-header h1 {
+        font-size: 2em;
+    }
+    
+    .emergency-button {
+        font-size: 1.5em;
+        padding: 20px 30px;
+    }
+    
+    .stats-overview {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-card {
+        width: 100%;
+        max-width: 200px;
+    }
+}

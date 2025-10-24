@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Guardian - Dashboard</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#FFFF00"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Family Guardian">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/icons/icon-192x192.png">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <header class="dashboard-header">
+                <h1>Family Dashboard</h1>
+                <p>Monitor and protect your loved one</p>
+            </header>
+
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <h3>Pending Alerts</h3>
+                    <p id="pendingCount">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Emergency Alerts</h3>
+                    <p id="emergencyCount">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Safe Contacts</h3>
+                    <p id="safeContactsCount">0</p>
+                </div>
+            </div>
+
+            <div class="alerts-section">
+                <h2>Recent Alerts</h2>
+                <button onclick="loadAlerts()" class="refresh-button">Refresh Alerts</button>
+                <div id="alertsContainer" class="alerts-container">
+                    <!-- Alerts will be loaded here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="safe-contacts">
+                <h2>Safe Contacts</h2>
+                <div id="safeContactsContainer" class="contacts-container">
+                    <!-- Safe contacts will be loaded here -->
+                </div>
+            </div>
+
+            <div class="navigation">
+                <a href="/" class="nav-link">← Back to Senior Interface</a>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
